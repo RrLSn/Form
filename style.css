@@ -36,6 +36,12 @@ form{
     flex-direction: column;
 }
 
+.warning{
+    display: none;
+    font-size: 1.2rem;
+    color: red;
+}
+
 form input{
     background: #66a7da;
     border: none;
@@ -56,7 +62,7 @@ form input::placeholder{
     color: #fff;
 }
 
-form .button{
+form #button{
     background: #66a7da;
     border: none;
     padding: 1rem;
@@ -70,7 +76,7 @@ form .button{
     box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #5b7c96, inset -12px -12px 24px #3e90d0;
 }
 
-form .button:hover{
+form #button:hover{
     background: #1166a7;
 }
 
