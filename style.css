@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #98c5e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 30%;
+    height: 65vh;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 24px 24px 48px rgba(174, 210, 236, 0.4), inset 12px 12px 24px #e7f2f9, inset -24px -24px 48px #b8d8ee;
+    padding: 5rem 4rem 0;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 3rem;
+    color: #66a7da;
+    margin: 0 0 3rem;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    background: #66a7da;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+    box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #63a5d9, inset -12px -12px 24px #3e90d0;
+}
+
+form input:focus{
+    background: #1166a7;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+
+form .button{
+    background: #66a7da;
+    border: none;
+    padding: 1rem;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 3rem 7rem;
+    width: 10rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #5b7c96, inset -12px -12px 24px #3e90d0;
+}
+
+form .button:hover{
+    background: #1166a7;
+}
+
+.container p{
+    font-size: 1.5rem;
+    color: #3e90d0;
+}
+
+.container p a{
+    color: #1166a7;
+}
+
+.container p a:focus{
+    color: #66a7da;
+}
+
+@media(max-width: 640px){
+    :root{
+        font-size: 10px;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    form .button{
+        margin-left: 3.5rem;
+    }
+}
