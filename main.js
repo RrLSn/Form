@@ -3,6 +3,8 @@ const warnginEl = document.querySelector('.warning')
 const username = document.querySelector('#username')
 const password = document.querySelector('#password')
 const button = document.querySelector('#button')
+const cursolEl = document.querySelector('.cursor')
+const container = document.querySelector('.container')
 
 
 button.addEventListener(
@@ -23,3 +25,11 @@ button.addEventListener(
         }
     }
 )
+
+window.addEventListener('mouseover',cursor)
+
+function cursor(e){
+    cursolEl.style.top = e.pageY + 'px'
+    cursolEl.style.left = e.pageX + 'px'
+}
+

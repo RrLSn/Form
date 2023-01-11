@@ -22,6 +22,8 @@ body{
     box-shadow: 24px 24px 48px rgba(174, 210, 236, 0.4), inset 12px 12px 24px #e7f2f9, inset -24px -24px 48px #b8d8ee;
     padding: 5rem 4rem 0;
     text-align: center;
+    z-index: -3;
+    position: relative;
 }
 
 .container h1{
@@ -91,6 +93,25 @@ form #button:hover{
 
 .container p a:focus{
     color: #66a7da;
+}
+
+.cursor{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #1166a7;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50% -50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+    backdrop-filter: grayscale();
+}
+
+.linkGrow{
+    transform: scale(3);
 }
 
 @media(max-width: 640px){
