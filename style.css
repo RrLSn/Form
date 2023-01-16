@@ -12,6 +12,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: none;
+    overflow: hidden;
 }
 
 .container{
@@ -22,7 +24,7 @@ body{
     box-shadow: 24px 24px 48px rgba(174, 210, 236, 0.4), inset 12px 12px 24px #e7f2f9, inset -24px -24px 48px #b8d8ee;
     padding: 5rem 4rem 0;
     text-align: center;
-    z-index: -3;
+    z-index: 0;
     position: relative;
 }
 
@@ -73,9 +75,9 @@ form #button{
     font-size: 1.2rem;
     margin: 3rem 7rem;
     width: 10rem;
-    cursor: pointer;
     font-weight: 600;
     box-shadow: 0px 4px 24px #b5d6ee, inset 6px 6px 12px #5b7c96, inset -12px -12px 24px #3e90d0;
+    cursor: pointer;
 }
 
 form #button:hover{
@@ -106,7 +108,7 @@ form #button:hover{
     pointer-events: none;
     transition-property: background, transform;
     transform-origin: 100% 100%;
-    z-index: -1;
+    z-index: 3;
     backdrop-filter: grayscale();
 }
 

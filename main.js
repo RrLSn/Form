@@ -14,19 +14,16 @@ button.addEventListener(
         if(username.value === ''){
             warnginEl.style.display = 'block'
             warnginEl.textContent = 'Input Your Username'
-        }
-        if(password.value === ''){
+        }else if(password.value === ''){
             warnginEl.style.display = 'block'
             warnginEl.textContent = 'Password Required'
-        }
-        if(username.value === '' && password.value === ''){
-            warnginEl.style.display = 'block'
-            warnginEl.textContent = 'Username and Password is required'
+        }else{
+            warnginEl.textContent = ''
         }
     }
 )
 
-window.addEventListener('mouseover',cursor)
+window.addEventListener('mousemove',cursor)
 
 function cursor(e){
     cursolEl.style.top = e.pageY + 'px'
